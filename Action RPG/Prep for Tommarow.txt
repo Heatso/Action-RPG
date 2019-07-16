@@ -5,6 +5,6 @@ Anyways...
 
 todo::
 - swipe dissapear (done!)
-- diagonal bouncing (dvd player like) for enemy.
+- diagonal bouncing (dvd player like) for enemy.(DONE!!!)
 - add more than one enemy. (TOTALLY FUCKED. I HAVE NO IDEA ON HOW TO DO)
 - implement tiles (i have never done this.)
