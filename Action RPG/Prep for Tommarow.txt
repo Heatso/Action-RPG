@@ -1,0 +1,10 @@
+This page is for putting my ideas and thoughts to hang on to untill tommarow.
+Because we forget stuff the next day, right?
+
+Anyways...
+
+todo::
+- swipe dissapear (done!)
+- diagonal bouncing (dvd player like) for enemy.
+- add more than one enemy. (TOTALLY FUCKED. I HAVE NO IDEA ON HOW TO DO)
+- implement tiles (i have never done this.)
