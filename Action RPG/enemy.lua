@@ -22,12 +22,20 @@ function en.load(x,y)
 	require("BoundingBox")
 end
 
+function en.getbox()
+return {
+x = en.box.x,
+y = en.box.y,
+w = en.box.w,
+h = en.box.w
+}
+end
 
 function en.update()
 	en.box.x = en.x + 8
 	en.box.y = en.y + 8
 
-	if CheckCollision(en.box.x,en.box.y,en.box.w,en.box.w,sw.getboxx(),sw.getboxy(),sw.getboxw(),sw.getboxw()) == true then
+	if CheckCollision(en.getbox(),sw.getbox()) == true then
 		if sw.getvis() == true then
 			en.alive = false
 		end
@@ -89,18 +97,8 @@ function en.dead()
 	end
 end
 
-function en.getboxx()
-return en.box.x
-end
-function en.getboxy()
-return en.box.y
-end
-function en.getboxw()
-return en.box.w
-end
-function en.getalive()
-return en.alive
-end
+
+
 
 function en.draw()
 

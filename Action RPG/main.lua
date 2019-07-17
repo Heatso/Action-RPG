@@ -4,11 +4,13 @@ function love.load()
 	require("swipe")
 	require("enemy")
 	require("timer")
+	require("health")
 	love.graphics.setDefaultFilter("nearest") --blocky!
-	pixeltest = love.graphics.newImage("pixeltest.png")
+	pixeltest = love.graphics.newImage("images/pixeltest.png")
 	pl.load()
 	sw.load()
 	en.load(76,31)
+	h.load(love.graphics.getWidth()- h.getWidth(),0)
 	
 end
 
@@ -26,6 +28,7 @@ end
 	pl.update()
 	sw.update()
 	en.update()
+	h.update()
 	timer.update()
 end
 
@@ -35,5 +38,6 @@ function love.draw()
 	pl.draw(0,0)
 	sw.draw()
 	en.draw()
+	h.draw()
 	
 end

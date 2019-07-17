@@ -9,8 +9,8 @@ function timer.update() --ticks per frame
 	end
 end
 
-function timer.set(x) --time for x frames
-	
+function timer.getframes()
+	return timer.frames
 end
 
 function timer.drawframes(x,y) -- get the frames currently elapsed and print em'
